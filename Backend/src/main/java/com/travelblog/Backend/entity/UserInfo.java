@@ -1,8 +1,22 @@
 package com.travelblog.Backend.entity;
 
-import com.fasterxml.jackson.annotation.JsonTypeId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
+import lombok.*;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@ToString
+@Table(name = "user_info")
 public class UserInfo {
+
 
     private Long usernumber; //회원번호
     private String username; //이름
