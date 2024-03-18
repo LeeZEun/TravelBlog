@@ -30,11 +30,11 @@ public class UserInfo {
     @Column(unique = true) private String useremail; //이메일
     @Column(unique = true) private String userphonenum; //폰번호
     @Column(unique = true) private String userid; //아이디
-    private String userpassword; //비번
+    @Column private String userpassword; //비번
     @Column(unique = true) private String usernickname; //닉네임
 
-    private boolean delete_yn; //탈퇴 true, 미탈퇴 false
-    private LocalDateTime created_at; //가입일시
+    @Column private boolean delete_yn; //탈퇴 true, 미탈퇴 false
+    @Column private LocalDateTime created_at; //가입일시
     @Column private LocalDateTime recent_access; //최근 로그인 일시
     @Column private LocalDateTime modified_data; //회원정보 수정 일시
 
