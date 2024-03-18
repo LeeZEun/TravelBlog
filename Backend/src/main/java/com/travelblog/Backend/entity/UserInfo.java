@@ -25,7 +25,6 @@ public class UserInfo {
     @Column(unique = true)
     private Long usernumber; //회원번호
 
-
     @Column private String username; //이름
     @Column(unique = true) private String useremail; //이메일
 //    @Column(unique = true) private String userphonenum; //폰번호
@@ -33,7 +32,7 @@ public class UserInfo {
     @Column private String userpassword; //비번
 //    @Column(unique = true) private String usernickname; //닉네임
 
-    @Column private boolean deleteyn; //탈퇴 true, 미탈퇴 false
+//    @Column private boolean deleteyn; //탈퇴 true, 미탈퇴 false
     @Column private LocalDateTime createdat; //가입일시
 //    @Column private LocalDateTime recentaccess; //최근 로그인 일시
 //    @Column private LocalDateTime modifieddata; //회원정보 수정 일시
