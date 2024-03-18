@@ -28,17 +28,17 @@ public class UserInfo {
 
     @Column private String username; //이름
     @Column(unique = true) private String useremail; //이메일
-    @Column(unique = true) private String userphonenum; //폰번호
+//    @Column(unique = true) private String userphonenum; //폰번호
     @Column(unique = true) private String userid; //아이디
     @Column private String userpassword; //비번
-    @Column(unique = true) private String usernickname; //닉네임
+//    @Column(unique = true) private String usernickname; //닉네임
 
     @Column private boolean deleteyn; //탈퇴 true, 미탈퇴 false
     @Column private LocalDateTime createdat; //가입일시
-    @Column private LocalDateTime recentaccess; //최근 로그인 일시
-    @Column private LocalDateTime modifieddata; //회원정보 수정 일시
+//    @Column private LocalDateTime recentaccess; //최근 로그인 일시
+//    @Column private LocalDateTime modifieddata; //회원정보 수정 일시
 
-    @Column private Integer alarm; //알림 기능 on 1 & off 0
-    @Column private Long loginnumber; //로그인 횟수[추가]
+//    @Column private Integer alarm; //알림 기능 on 1 & off 0
+//    @Column private Long loginnumber; //로그인 횟수[추가]
 
 }
